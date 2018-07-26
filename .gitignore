@@ -27,4 +27,6 @@ Thumbs.db
 *.swp
 libdarknet.a
 libdarknet.so
+
 yolov3.weights
+extraction.weights

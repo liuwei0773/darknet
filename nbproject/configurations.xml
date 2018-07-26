@@ -4,26 +4,20 @@
     <df root="." name="0">
       <df name="examples">
         <in>art.c</in>
-        <in>attention.c</in>
         <in>captcha.c</in>
         <in>cifar.c</in>
         <in>classifier.c</in>
         <in>coco.c</in>
         <in>darknet.c</in>
         <in>detector.c</in>
-        <in>dice.c</in>
         <in>go.c</in>
         <in>lsd.c</in>
         <in>nightmare.c</in>
         <in>regressor.c</in>
         <in>rnn.c</in>
-        <in>rnn_vid.c</in>
         <in>segmenter.c</in>
         <in>super.c</in>
-        <in>swag.c</in>
         <in>tag.c</in>
-        <in>voxel.c</in>
-        <in>writing.c</in>
         <in>yolo.c</in>
       </df>
       <df name="src">
@@ -95,7 +89,7 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <flagsDictionary>
-        <element flagsID="0" commonFlags="-fPIC -Ofast"/>
+        <element flagsID="0" commonFlags="-fPIC -g"/>
       </flagsDictionary>
       <codeAssistance>
       </codeAssistance>
@@ -131,11 +125,11 @@
         <cTool flags="0">
         </cTool>
       </item>
-      <item path="examples/darknet.c" ex="false" tool="0" flavor2="0">
+      <item path="examples/darknet.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
         </cTool>
       </item>
-      <item path="examples/detector.c" ex="false" tool="0" flavor2="0">
+      <item path="examples/detector.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
         </cTool>
       </item>
@@ -147,7 +141,7 @@
         <cTool flags="0">
         </cTool>
       </item>
-      <item path="examples/nightmare.c" ex="false" tool="0" flavor2="0">
+      <item path="examples/nightmare.c" ex="false" tool="0" flavor2="2">
         <cTool flags="0">
         </cTool>
       </item>
@@ -180,8 +174,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </folder>
       <item path="src/activation_layer.c" ex="false" tool="0" flavor2="2">
@@ -189,8 +191,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/activations.c" ex="false" tool="0" flavor2="2">
@@ -198,8 +208,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/avgpool_layer.c" ex="false" tool="0" flavor2="2">
@@ -207,8 +225,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/batchnorm_layer.c" ex="false" tool="0" flavor2="2">
@@ -216,8 +242,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/blas.c" ex="false" tool="0" flavor2="2">
@@ -225,8 +259,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/box.c" ex="false" tool="0" flavor2="2">
@@ -234,8 +276,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/col2im.c" ex="false" tool="0" flavor2="2">
@@ -243,8 +293,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/compare.c" ex="false" tool="0" flavor2="2">
@@ -254,8 +312,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/convolutional_layer.c" ex="false" tool="0" flavor2="2">
@@ -263,8 +329,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/cost_layer.c" ex="false" tool="0" flavor2="2">
@@ -272,8 +346,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/crnn_layer.c" ex="false" tool="0" flavor2="2">
@@ -281,8 +363,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/crop_layer.c" ex="false" tool="0" flavor2="2">
@@ -290,8 +380,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/cuda.c" ex="false" tool="0" flavor2="2">
@@ -299,8 +397,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/data.c" ex="false" tool="0" flavor2="2">
@@ -308,8 +414,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/deconvolutional_layer.c" ex="false" tool="0" flavor2="2">
@@ -317,8 +431,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/demo.c" ex="false" tool="0" flavor2="2">
@@ -326,8 +448,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/detection_layer.c" ex="false" tool="0" flavor2="2">
@@ -335,8 +465,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/dropout_layer.c" ex="false" tool="0" flavor2="2">
@@ -344,8 +482,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/gemm.c" ex="false" tool="0" flavor2="2">
@@ -353,8 +499,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/gru_layer.c" ex="false" tool="0" flavor2="2">
@@ -362,8 +516,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/im2col.c" ex="false" tool="0" flavor2="2">
@@ -371,8 +533,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/image.c" ex="false" tool="0" flavor2="2">
@@ -380,8 +550,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/l2norm_layer.c" ex="false" tool="0" flavor2="2">
@@ -389,8 +567,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/layer.c" ex="false" tool="0" flavor2="2">
@@ -398,8 +584,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/list.c" ex="false" tool="0" flavor2="2">
@@ -407,8 +601,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/local_layer.c" ex="false" tool="0" flavor2="2">
@@ -416,8 +618,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/logistic_layer.c" ex="false" tool="0" flavor2="2">
@@ -425,8 +635,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/lstm_layer.c" ex="false" tool="0" flavor2="2">
@@ -434,8 +652,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/matrix.c" ex="false" tool="0" flavor2="2">
@@ -443,8 +669,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/maxpool_layer.c" ex="false" tool="0" flavor2="2">
@@ -452,8 +686,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/network.c" ex="false" tool="0" flavor2="2">
@@ -461,8 +703,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/normalization_layer.c" ex="false" tool="0" flavor2="2">
@@ -470,8 +720,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/option_list.c" ex="false" tool="0" flavor2="2">
@@ -479,8 +737,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/parser.c" ex="false" tool="0" flavor2="2">
@@ -488,8 +754,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/region_layer.c" ex="false" tool="0" flavor2="2">
@@ -497,8 +771,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/reorg_layer.c" ex="false" tool="0" flavor2="2">
@@ -506,8 +788,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/rnn_layer.c" ex="false" tool="0" flavor2="2">
@@ -515,8 +805,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/route_layer.c" ex="false" tool="0" flavor2="2">
@@ -524,8 +822,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/shortcut_layer.c" ex="false" tool="0" flavor2="2">
@@ -533,8 +839,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/softmax_layer.c" ex="false" tool="0" flavor2="2">
@@ -542,8 +856,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/tree.c" ex="false" tool="0" flavor2="2">
@@ -551,8 +873,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/upsample_layer.c" ex="false" tool="0" flavor2="2">
@@ -560,8 +890,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/utils.c" ex="false" tool="0" flavor2="2">
@@ -569,8 +907,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
       <item path="src/yolo_layer.c" ex="false" tool="0" flavor2="2">
@@ -578,8 +924,16 @@
           <incDir>
             <pElem>include</pElem>
             <pElem>src</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/cuda/include</pElem>
             <pElem>.</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>CUDNN</Elem>
+            <Elem>GPU</Elem>
+            <Elem>OPENCV</Elem>
+          </preprocessorList>
         </cTool>
       </item>
     </conf>
